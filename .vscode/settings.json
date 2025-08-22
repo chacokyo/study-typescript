@@ -8,5 +8,7 @@
     "**/node_modules": true
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "editor.inlayHints.enabled": "onUnlessPressed"
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.autoClosingQuotes": "never",
+  "prettier.singleQuote": true
 }
