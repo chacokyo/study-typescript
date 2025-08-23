@@ -5,3 +5,4 @@ enum ColorComputed {
   Green = 'green'.length,
 }
 
+console.log(ColorComputed.Green === 5)
