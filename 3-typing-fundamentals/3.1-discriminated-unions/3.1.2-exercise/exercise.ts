@@ -9,11 +9,33 @@
 // Vehicle을 받아 차량을 설명하는 문자열을 반환하는 `describeVehicle` 함수를 작성하세요.
 // car 형태라면 "[    ] 문이있는 자동차."를 반환해야 하고,
 // truck 형태라면 "적재 화물 용량이 [     ]인 트럭."를 반환해야 합니다.
+type Car = {
+  kind: 'car'
+  numberOfDoors: number
+}
 
+type Truck = {
+  kind: 'truck'
+  payloadCapacity: number
+}
 
+type Vehicle = Car | Truck
+
+function describeVehicle(vehicle: Vehicle): string {
+  switch (vehicle.kind) {
+    case 'car':
+      return `${vehicle.numberOfDoors} 문이 있는 자동차`
+    case 'truck':
+      return `적재 화물 용량이 ${vehicle.payloadCapacity}인 트럭`
+    default: {
+      const _exhaustiveCheck: never = vehicle
+      return _exhaustiveCheck
+    }
+  }
+}
 // 테스트 케이스
-// const car: Vehicle = { kind: 'car', numberOfDoors: 4 }
-// const truck: Vehicle = { kind: 'truck', payloadCapacity: 2000 }
+const car: Vehicle = { kind: 'car', numberOfDoors: 4 }
+const truck: Vehicle = { kind: 'truck', payloadCapacity: 2000 }
 
-// console.log(describeVehicle(car)) // 자동차 설명이 출력되어야 합니다.
-// console.log(describeVehicle(truck)) // 트럭 설명이 출력되어야 합니다.
+console.log(describeVehicle(car)) // 자동차 설명이 출력되어야 합니다.
+console.log(describeVehicle(truck)) // 트럭 설명이 출력되어야 합니다.
