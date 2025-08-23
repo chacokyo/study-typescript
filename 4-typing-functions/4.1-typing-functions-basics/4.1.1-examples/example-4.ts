@@ -1,5 +1,6 @@
 // 함수 변수의 타입도 선언할 수 있습니다.
-const multiply: (a: number, b: number) => number = function (a, b) {
+type Fn = (a: number, b: number) => number
+const multiply: Fn = function (a, b) {
   return a * b
 }
 
