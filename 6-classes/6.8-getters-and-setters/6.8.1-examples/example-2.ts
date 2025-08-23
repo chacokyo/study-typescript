@@ -14,3 +14,6 @@ class Person {
     this._name = value
   }
 }
+
+const person = new Person('jisu')
+person.name = 'hamin'
