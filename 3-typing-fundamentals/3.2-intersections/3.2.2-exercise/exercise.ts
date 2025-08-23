@@ -15,3 +15,14 @@ interface Employee {
   employeeId: number
   department: string
 }
+
+type Staff = Person & Employee
+
+let staff: Staff = {
+  name: 'jisu',
+  age: 1004,
+  employeeId: 1,
+  department: 'hamster',
+}
+
+console.log(staff)
