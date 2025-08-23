@@ -20,6 +20,8 @@ interface Employee {
 function logPersonName(person: Person): void {
   return console.log(person.name)
 }
+const jisu: Employee = { name: 'jisu', age: 1004, employeeId: 10 }
+logPersonName(jisu)
 
 // 질문 2
 // Employee에서 age 속성을 주석 처리하면 어떻게 될까요?
