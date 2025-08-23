@@ -13,8 +13,8 @@ interface Address {
 interface Person {
   firstName: string
   lastName: string
-  age: number
-  address: Address
+  readonly age: number
+  readonly address: Address
 }
 
 function updatePerson(person: Person) {
@@ -25,14 +25,13 @@ function updatePerson(person: Person) {
   console.log(person)
 }
 
-
 // 2. 아래의 personConst 객체를 `as const`로 불변 객체로 만드세요.
 // 그리고 아래 객체의 속성을 변경할 수 없음을 확인하세요.
 
 const personConst = {
   name: '한재현',
   age: 22,
-}
+} as const
 
 // personConst.name personConst.age 값을 변경해보세요.
 // Error: Cannot assign to 'name' because it is a read-only property.
