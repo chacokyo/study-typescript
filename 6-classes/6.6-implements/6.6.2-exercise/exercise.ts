@@ -10,3 +10,12 @@
 interface Logger {
   log(message: string): void
 }
+
+class ConsoleLogger implements Logger {
+  log(message: string): void {
+    return console.log(message)
+  }
+}
+
+const hamster = new ConsoleLogger()
+hamster.log('ham')
