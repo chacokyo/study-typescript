@@ -5,3 +5,10 @@ interface User {
 }
 
 type UserWithAge = User & { age: number }
+
+const user: UserWithAge = {
+  name: 'hamster',
+  age: 1004,
+}
+
+console.log(user.age)
