@@ -3,10 +3,9 @@
 // --------------------------------------------------------------------------
 
 // 1. 이 함수가 `never`를 반환하도록 타입을 지정하세요.
-function error(message: string) {
+function error(message: string): never {
   throw new Error(message)
 }
-
 
 // 2. describeUser 함수의 switch 문이 모든 경우를 빠짐없이 처리하도록 `never`를 사용하세요.
 interface Admin {
@@ -19,7 +18,12 @@ interface Guest {
   visitCount: number
 }
 
-type User = Admin | Guest
+type Hamster = {
+  kind: 'jisu'
+  job: string
+}
+
+type User = Admin | Guest | Hamster
 
 function describeUser(user: User): string {
   switch (user.kind) {
@@ -29,6 +33,12 @@ function describeUser(user: User): string {
       return `게스트의 방문 횟수는 ${user.visitCount}번 입니다.`
     // 여기서 `never` 타입을 사용해 모든 경우를 처리했는지 확인할 수 있습니다.
     default:
-      return ''
+      const _exhaustiveCheck: never = user
+      return _exhaustiveCheck
   }
 }
+
+// : never
+console.log(describeUser({ kind: 'admin', privileges: ['hamster', 'jisu'] }))
+console.log(describeUser({ kind: 'guest', visitCount: 10 }))
+console.log(describeUser({ kind: 'jisu', job: 'kill you' }))
