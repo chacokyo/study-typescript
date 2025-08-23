@@ -15,12 +15,16 @@ class Book {
   }
 
   describe() {
-    console.log(`이 책의 제목은 "${this.title}"이고, 저자는 ${this.author}입니다.`)
+    console.log(
+      `이 책의 제목은 "${this.title}"이고, 저자는 ${this.author}입니다.`
+    )
   }
 }
 
+const hamster = new Book('kill you', 'jisu')
+hamster.describe()
 
-// 문제 2 
+// 문제 2
 // 아래 Tree 타입의 새 객체를 생성하세요.
 
 type Tree = {
@@ -28,6 +32,12 @@ type Tree = {
   age: number
 }
 
+const ham: Tree = {
+  height: 10,
+  age: 19,
+}
+
+console.log(ham)
 
 // 문제 3
 // 아래 Car 인터페이스의 새 객체를 생성하세요.
@@ -37,3 +47,11 @@ interface Car {
   model: string
   year: number
 }
+
+const ster: Car = {
+  make: 'toyota',
+  model: 'toyo',
+  year: 2025,
+}
+
+console.log(ster)
