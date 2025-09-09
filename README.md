@@ -1,5 +1,14 @@
 ## typescript
 
+| no  | title                           |
+| --- | ------------------------------- |
+| 1   | [튜플](./ex1.md)                |
+| 2   | [타입, 인터페이스](./ex2.md)    |
+| 3   | [any, unknown, never](./ex3.md) |
+| 4   | [모듈](./ex4.md)                |
+
+## setting
+
 ```
 pnpm i typescript -D
 npx tsc <파일명>
