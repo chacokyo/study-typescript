@@ -6,6 +6,7 @@
 | 2   | [타입, 인터페이스](./ex2.md)    |
 | 3   | [any, unknown, never](./ex3.md) |
 | 4   | [모듈](./ex4.md)                |
+| 5   | [함수 타입 지정](./ex5.md)      |
 
 ## setting
 
