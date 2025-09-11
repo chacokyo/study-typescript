@@ -1,12 +1,13 @@
 ## typescript
 
-| no  | title                                   |
-| --- | --------------------------------------- |
-| 1   | [튜플](./8-study/ex1.md)                |
-| 2   | [타입, 인터페이스](./8-study/ex2.md)    |
-| 3   | [any, unknown, never](./8-study/ex3.md) |
-| 4   | [모듈](./8-study/ex4.md)                |
-| 5   | [함수 타입 지정](./8-study/ex5.md)      |
+| no  | title                                       |
+| --- | ------------------------------------------- |
+| 1   | [튜플](./8-study/ex1.md)                    |
+| 2   | [타입, 인터페이스](./8-study/ex2.md)        |
+| 3   | [any, unknown, never](./8-study/ex3.md)     |
+| 4   | [모듈](./8-study/ex4.md)                    |
+| 5   | [함수 타입 지정](./8-study/ex5.md)          |
+| 6   | [ReactNode, ReactElement](./8-study/ex6.md) |
 
 ## setting
 
