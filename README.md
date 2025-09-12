@@ -8,6 +8,7 @@
 | 4   | [모듈](./8-study/ex4.md)                    |
 | 5   | [함수 타입 지정](./8-study/ex5.md)          |
 | 6   | [ReactNode, ReactElement](./8-study/ex6.md) |
+| 7   | [PropsWithChildren](./8-study/ex7.md)       |
 
 ## setting
 
